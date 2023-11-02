@@ -1,14 +1,13 @@
-import apis.ConjuntoTDA;
-import apis.GrafoTDA;
+package DFS;
 
 public class DFS_Algoritmo {
     public void DFS(int origen, GrafoMA grafo, int[] marca, int[] p){
         marca[origen] = 1; // marca como gris
 
         ConjuntoTDA adyacentes = grafo.Adyacentes(origen);
-        while (!adyacentes.conjuntoVacio()) {
-            int v = adyacentes.elegir();
-            adyacentes.sacar(v);
+        while (!adyacentes.ConjuntoVacio()) {
+            int v = adyacentes.Elegir();
+            adyacentes.Sacar(v);
             if (marca[v] == 0) {
                 p[v] = origen;
                 System.out.println("El predecesor de " + v + " es " + origen);
