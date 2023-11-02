@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Parcial">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Biblioteca/Parcial.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
