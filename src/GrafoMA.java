@@ -87,7 +87,6 @@ public class GrafoMA  {
         return this.MAdy[o][d];
     }
 
-    //Recuperar los adyacentes
     public ConjuntoTDA Adyacentes(int v){
         ConjuntoTDA adyacentes = new ConjuntoLD();
         adyacentes.inicializarConjunto();
@@ -98,4 +97,8 @@ public class GrafoMA  {
         }
         return adyacentes;
     }
+    public int getCantNodos(){
+        return MAdy.length;
+    }
+    
 }
