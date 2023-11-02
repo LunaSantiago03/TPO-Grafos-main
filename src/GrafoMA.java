@@ -86,4 +86,16 @@ public class GrafoMA  {
         int d = this.Vert2Indice(v2);
         return this.MAdy[o][d];
     }
+
+    //Recuperar los adyacentes
+    public ConjuntoTDA Adyacentes(int v){
+        ConjuntoTDA adyacentes = new ConjuntoLD();
+        adyacentes.inicializarConjunto();
+        for(int i = 0;i < cantNodos; i++){
+            if(MAdy[v][i]!=0){
+                adyacentes.agregar(Etiqs[i]);
+            }
+        }
+        return adyacentes;
+    }
 }
